@@ -33,9 +33,63 @@
             </nav>
             <div class="header-info">
                 <ul>
-                    <li class="header-info__item"><a class="btn header-info__btn" href="#">Search</a></li>
-                    <li class="header-info__item"><a class="btn header-info__btn" href="#">Вход</a></li>
-                    <li class="header-info__item"><a class="btn header-info__btn" href="#">Пусто</a></li>
+                    <li class="header-info__item"><a class="btn header-info__btn" href="#">Search</a>
+                        <div class="header-info__search">
+                            <input class="header-info__input" id="search" type="search" name="search" required>
+                            <label class="header-info__label" for="search">Что ищем?</label>
+                        </div>
+                    </li>
+                    <li class="header-info__item">
+                        <a class="btn header-info__btn" href="#">Вход</a>
+                        <div class="header-login">
+                            <form action="/" class="header-login__form">
+                              <div class="header-login__field">
+                                <input class="header-login__input" type="text" id="login-email" required>
+                                <label class="header-login__label" for="login-email">Электронная почта</label>
+                              </div>
+                              <div class="header-login__field">
+                                <input class="header-login" type="password" id="login-pass" required>
+                                <label class="header-login__label" for="login-pass">Пароль</label>
+                              </div>
+                                <button class="btn header-login__btn">Войти</button>
+                              <div class="header-login__links">
+                                <a href="#" class="header-login__auth">Забыли пароль?</a>
+                                <a href="#" class="header-login__auth">Новая регистрация</a>
+                              </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="header-info__item">
+                        <a class="btn header-info__btn" href="#">Пусто</a>
+                        <div class="header-cart">
+                            <table class="header-cart__table">
+                              <tr class="header-cart__item">
+                                <td class="header-cart__remove">
+                                  <button type="button" class="header-cart__icon-remove">Закрыть</button>
+                                </td>
+                                <td class="header-cart__img"><img src="/" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
+                                <td class="header-cart__description">Пломбир с апельсиновым джемом</td>
+                                <td class="header-cart__price">1,5кг <span>x 200 руб.</span></td>
+                                <td class="header-cart__count">300 руб.</td>
+                              </tr>
+                              <tr class="header-cart__item">
+                                <td class="header-cart__remove">
+                                  <button type="button" class="header-cart__icon-remove">Закрыть</button>
+                                </td>
+                                <td class="header-cart__img"><img src="/" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
+                                <td class="header-cart__description">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                <td class="header-cart__price">1,5кг <span>x 300 руб.</span></td>
+                                <td class="header-cart__count">450 руб.</td>
+                              </tr>
+                              <tr class="header-cart__item">
+                                <td class="header-cart__total">Итого: 750 руб.</td>
+                              </tr>
+                            </table>
+                            <div class="header-purchase">
+                              <button type="submit" class="btn header-purchase__btn">Оформить заказ</button>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -186,5 +240,26 @@
         </div>
     </footer>
 </div>
+    <div class="modal-feedback">
+      <button class="modal-feedback__close" type="button">Назад</button>
+      <p class="modal-feedback__text">Мы обязательно вам ответим!</p>
+      <form class="modal-feedback__form" action="/" method="post">
+        <div class="modal-feedback__field">
+          <input class="modal-feedback__item modal-feedback__input" type="text" name="name" id="modal-name" required>
+          <label class="modal-feedback__label" for="modal-name">Как вас зовут</label>
+        </div>
+        <div class="modal-feedback__field">
+          <input class="modal-feedback__item modal-feedback__input" type="text" name="email" id="modal-email" required>
+          <label class="modal-feedback__label" for="modal-email">Ваша почта для ответа?</label>
+        </div>
+        <div class="modal-feedback__field">
+          <textarea class="modal-feedback__text modal-feedback__input" name="text" rows="6" id="modal-text" required></textarea>
+          <label class="modal-feedback__label" for="modal-text">Напишите что-нибудь...</label>
+        </div>
+        <div class="modal-feedback__btn">
+          <button class="btn modal__btn" name="modal-send">Отправить</button>
+        </div>
+      </form>
+    </div>
 </body>
 </html>

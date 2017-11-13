@@ -7,37 +7,91 @@
 <body>
 <div class="container">
     <header>
-        <div class="header-logo">
-            <img src="/" alt="Gllacy Shop" width="281" height="193">
-        </div>
-        <nav>
-            <ul class="nav-menu">
-                <li class="nav-menu__item">
-                    <a href="#">Каталог</a>
-                    <ul class="nav-submenu">
-                        <li class="nav-submenu__item nav-submenu__new"><a href="#">Новинки</a></li>
-                        <li class="nav-submenu__item"><a href="#">Сливочное</a></li>
-                        <li class="nav-submenu__item"><a href="#">Щербеты</a></li>
-                        <li class="nav-submenu__item"><a href="#">Фруктовый лед</a></li>
-                        <li class="nav-submenu__item"><a href="#">Мелорин</a></li>
-                    </ul>
-                </li>
-                <li class="nav-menu__item">
-                    <a href="#">Доставка и оплата</a>
-                </li>
-                <li class="nav-menu__item">
-                    <a href="#">О компании</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header-info">
-            <ul>
-                <li class="header-info__item"><a class="btn header-info__btn" href="#">Search</a></li>
-                <li class="header-info__item"><a class="btn header-info__btn" href="#">Вход</a></li>
-                <li class="header-info__item"><a class="btn header-info__btn" href="#">Пусто</a></li>
-            </ul>
-        </div>
-    </header>
+            <div class="header-logo">
+                <img src="/" alt="Gllacy Shop" width="281" height="193">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a href="/catalog.html">Каталог</a>
+                        <ul class="nav-submenu">
+                            <li class="nav-submenu__item nav-submenu__new"><a href="#">Новинки</a></li>
+                            <li class="nav-submenu__item"><a href="/catalog.html">Сливочное</a></li>
+                            <li class="nav-submenu__item"><a href="#">Щербеты</a></li>
+                            <li class="nav-submenu__item"><a href="#">Фруктовый лед</a></li>
+                            <li class="nav-submenu__item"><a href="#">Мелорин</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="#">Доставка и оплата</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="#">О компании</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-info">
+                <ul>
+                    <li class="header-info__item"><a class="btn header-info__btn" href="#">Search</a>
+                        <div class="header-info__search">
+                            <input class="header-info__input" id="search" type="search" name="search" required>
+                            <label class="header-info__label" for="search">Что ищем?</label>
+                        </div>
+                    </li>
+                    <li class="header-info__item">
+                        <a class="btn header-info__btn" href="#">Вход</a>
+                        <div class="header-login">
+                            <form action="/" class="header-login__form">
+                              <div class="header-login__field">
+                                <input class="header-login__input" type="text" id="login-email" required>
+                                <label class="header-login__label" for="login-email">Электронная почта</label>
+                              </div>
+                              <div class="header-login__field">
+                                <input class="header-login" type="password" id="login-pass" required>
+                                <label class="header-login__label" for="login-pass">Пароль</label>
+                              </div>
+                                <button class="btn header-login__btn">Войти</button>
+                              <div class="header-login__links">
+                                <a href="#" class="header-login__auth">Забыли пароль?</a>
+                                <a href="#" class="header-login__auth">Новая регистрация</a>
+                              </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="header-info__item">
+                        <a class="btn header-info__btn" href="#">Пусто</a>
+                        <div class="header-cart">
+                            <table class="header-cart__table">
+                              <tr class="header-cart__item">
+                                <td class="header-cart__remove">
+                                  <button type="button" class="header-cart__icon-remove">Закрыть</button>
+                                </td>
+                                <td class="header-cart__img"><img src="/" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
+                                <td class="header-cart__description">Пломбир с апельсиновым джемом</td>
+                                <td class="header-cart__price">1,5кг <span>x 200 руб.</span></td>
+                                <td class="header-cart__count">300 руб.</td>
+                              </tr>
+                              <tr class="header-cart__item">
+                                <td class="header-cart__remove">
+                                  <button type="button" class="header-cart__icon-remove">Закрыть</button>
+                                </td>
+                                <td class="header-cart__img"><img src="/" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
+                                <td class="header-cart__description">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                <td class="header-cart__price">1,5кг <span>x 300 руб.</span></td>
+                                <td class="header-cart__count">450 руб.</td>
+                              </tr>
+                              <tr class="header-cart__item">
+                                <td class="header-cart__total">Итого: 750 руб.</td>
+                              </tr>
+                            </table>
+                            <div class="header-purchase">
+                              <button type="submit" class="btn header-purchase__btn">Оформить заказ</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
     <div class="top-phone">
         <span>с 10 до 20, ежедневно</span>
         <b>8 812 450-25-25</b>
