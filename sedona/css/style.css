@@ -1,3 +1,65 @@
+/* Подключение Web шрифтов */
+@font-face {
+    font-family: 'PTSans-Regular';
+    src: url('../fonts/ptsans.woff2') format('woff2'),
+    url('../fonts/ptsans.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSans-Bold';
+    src: url('../fonts/ptsansbold.woff2') format('woff2'),
+    url('../fonts/ptsansbold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Стили */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "PTSans-Regular", sans-serif;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #000000;
+    font-family: "PTSans-Bold", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #000000;
+    font-family: "PTSans-Bold", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
 .results-icon {
     display: inline-block;
     width: 18px;
