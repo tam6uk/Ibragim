@@ -18,7 +18,7 @@
         <li class="nav-menu__item">
           <a href="catalog.html">Каталог</a>
           <ul class="nav-submenu">
-            <li class="nav-submenu__item nav-submenu__new"><a href="#">Новинки</a></li>
+            <li class="nav-submenu__item"><a href="#">Новинки</a></li>
             <li class="nav-submenu__item"><a href="catalog.html">Сливочное</a></li>
             <li class="nav-submenu__item"><a href="#">Щербеты</a></li>
             <li class="nav-submenu__item"><a href="#">Фруктовый лед</a></li>
@@ -98,22 +98,22 @@
         </li>
       </ul>
     </div>
+    <div class="top-phone">
+        <span>с 10 до 20, ежедневно</span>
+        <b>8 812 450-25-25</b>
+      </div>
   </header>
-  <div class="top-phone">
-    <span>с 10 до 20, ежедневно</span>
-    <b>8 812 450-25-25</b>
-  </div>
-  <div class="breadcrumbs">
-    <ul>
-      <li class="breadcrumbs-item"><a href="/">Главная</a></li>
-      <li class="breadcrumbs-item"><span>Каталог</span></li>
-      <li class="breadcrumbs-item"><a href="#">Сливочное</a></li>
-    </ul>
-  </div>
   <main>
+    <div class="breadcrumbs">
+      <ul>
+        <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
+        <li class="breadcrumbs-item"><span>Сливочное</span></li>
+      </ul>
+    </div>
     <h2>Сливочное мороженое</h2>
     <div class="main-filter">
-      <form action="/">
+      <form action="/" method="post">
         <div class="input-wrap">
           <label for="main-sort">Сортировка:</label>
           <div class="input-bg">
@@ -137,13 +137,13 @@
             <legend>Жирность:</legend>
             <div class="input-bg">
               <label for="radio0">0%</label>
-              <input type="radio" class="main-filter__radio" id="radio0" name="filter-radio">
+              <input type="radio" class="main-filter__radio" id="radio0" value="0" name="filter-radio">
               <label for="radio1">до 10%</label>
-              <input type="radio" class="main-filter__radio" id="radio1" name="filter-radio">
+              <input type="radio" class="main-filter__radio" id="radio1" value="10" name="filter-radio">
               <label for="radio2">до 30%</label>
-              <input type="radio" class="main-filter__radio" id="radio2" name="filter-radio">
+              <input type="radio" class="main-filter__radio" id="radio2" value="less30" name="filter-radio">
               <label for="radio3">выше 30%</label>
-              <input type="radio" class="main-filter__radio" id="radio3" name="filter-radio">
+              <input type="radio" class="main-filter__radio" id="radio3" value="more30" name="filter-radio">
             </div>
           </fieldset>
         </div>
@@ -152,7 +152,7 @@
             <legend>Наполнители:</legend>
             <div class="input-bg">
               <input type="checkbox" class="main-filter__check" id="check0" name="filter-check">
-              <label for="check0">шоколадные%</label>
+              <label for="check0">шоколадные</label>
               <input type="checkbox" class="main-filter__check" id="check1" name="filter-check">
               <label for="check1">сахарные присыпки</label>
               <input type="checkbox" class="main-filter__check" id="check2" name="filter-check">
@@ -292,11 +292,11 @@
     <div class="pagination">
       <ul>
         <li class="pagination-item"><a class="active-link pagination-link" href="/catalog.html">1</a></li>
-        <li class="pagination-item"><a class="active-link pagination-link" href="#">2</a></li>
-        <li class="pagination-item"><a class="active-link pagination-link" href="#">3</a></li>
-        <li class="pagination-item"><a class="active-link pagination-link" href="#">4</a></li>
-        <li class="pagination-item"><a class="active-link pagination-link" href="#">5</a></li>
-        <li class="pagination-item"><a class="active-link pagination-link" href="#">Последняя страница</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="#">Последняя страница</a></li>
       </ul>
     </div>
   </main>

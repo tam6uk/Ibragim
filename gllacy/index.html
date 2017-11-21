@@ -19,7 +19,7 @@
           <li class="nav-menu__item">
             <a href="/catalog.html">Каталог</a>
             <ul class="nav-submenu">
-              <li class="nav-submenu__item nav-submenu__new"><a href="#">Новинки</a></li>
+              <li class="nav-submenu__item"><a href="#">Новинки</a></li>
               <li class="nav-submenu__item"><a href="/catalog.html">Сливочное</a></li>
               <li class="nav-submenu__item"><a href="#">Щербеты</a></li>
               <li class="nav-submenu__item"><a href="#">Фруктовый лед</a></li>
@@ -86,10 +86,10 @@
                   <td class="header-cart__price">1,5кг <span>x 300 руб.</span></td>
                   <td class="header-cart__count">450 руб.</td>
                 </tr>
-                <tr class="header-cart__item">
-                  <td class="header-cart__total">Итого: 750 руб.</td>
-                </tr>
-              </table>
+                </table>
+                <div class="header-cart__item">
+                  <div class="header-cart__total">Итого: 750 руб.</div>
+                </div>
               <div class="header-purchase">
                 <button type="submit" class="btn header-purchase__btn">Оформить заказ</button>
               </div>
@@ -97,23 +97,23 @@
           </li>
         </ul>
       </div>
+      <div class="top-phone">
+          <span>с 10 до 20, ежедневно</span>
+          <b>8 812 450-25-25</b>
+        </div>
     </header>
-    <div class="top-phone">
-      <span>с 10 до 20, ежедневно</span>
-      <b>8 812 450-25-25</b>
-    </div>
     <main>
       <div class="main-slider">
         <div class="main-slide">
-          <h1>Крем-брюле и пломбир с малиновым джемом</h1>
+          <h2>Крем-брюле и пломбир с малиновым джемом</h2>
           <a href="#" class="btn main-slide__btn">Давайте оба</a>
         </div>
         <div class="main-slide">
-          <h1>Шоколадный пломбир и лимонный сорбет</h1>
+          <h2>Шоколадный пломбир и лимонный сорбет</h2>
           <a href="#" class="btn main-slide__btn">Давайте оба</a>
         </div>
         <div class="main-slide">
-          <h1>Пломбир с помадкой и клубничный щербет</h1>
+          <h2>Пломбир с помадкой и клубничный щербет</h2>
           <a href="#" class="btn main-slide__btn">Давайте оба</a>
         </div>
         <div class="slider-control">
@@ -131,13 +131,15 @@
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья
             бесплатно.
           </p>
-          <a href="#" class="btn main-banners__btn">Хочу варенье!</a></div>
+          <a href="#" class="btn main-banners__btn">Хочу варенье!</a>
+        </div>
         <div class="main-banner">
           <h3>Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
             бесплатно.
           </p>
-          <a href="#" class="btn main-banners__btn">Хочу шоколадки!</a></div>
+          <a href="#" class="btn main-banners__btn">Хочу шоколадки!</a>
+        </div>
       </div>
       <div class="main-products">
         <div class="icecream-item">
@@ -258,7 +260,11 @@
     </div>
     <div class="modal-feedback__field">
       <input class="modal-feedback__item modal-feedback__input" type="text" name="email" id="modal-email" required>
-      <label class="modal-feedback__label" for="modal-email">Ваш email</label>
+      <label class="modal-feedback__label" for="modal-email">Ваша почта для ответа?</label>
+    </div>
+    <div class="modal-feedback__field">
+      <textarea name="modal-textarea" id="modal-textarea"></textarea>
+      <label for="modal-textarea">Напишите что-нибдудь...</label>
     </div>
     <div class="modal-feedback__btn">
       <button class="btn modal__btn" name="modal-send">Отправить</button>

@@ -14,7 +14,7 @@
       <ul class="menu">
         <li><a href="#" class="menu-link">Информация</a></li>
         <li><a href="#" class="menu-link">Фото и видео</a></li>
-        <li><a href="/"><img src="/" alt="Седона" width="138" height="70"></a></li>
+        <li><a href="index.html"><img src="/" alt="Седона" width="138" height="70"></a></li>
         <li><a href="#" class="menu-link">Карта штата</a></li>
         <li><a href="#" class="menu-link menu-link__active">Гостиницы</a></li>
       </ul>
@@ -77,8 +77,8 @@
           <a href="#" class="result-sorters__link">По рейтингу</a>
         </div>
         <div class="results-sort-btns">
-          <span class="result-sort-decrease"></span>
-          <span class="result-sort-increase"></span>
+          <btn class="result-sort-decrease"></btn>
+          <btn class="result-sort-increase"></btn>
         </div>
       </div>
       <div class="results-content">
@@ -87,44 +87,28 @@
             <img src="img/amara.jpg" alt="Amara Resort and Spa" width="135" height="90">
           </div>
           <div class="results-item-info">
-            <h2>Amara Resort & Spa</h2>
-            <span class="results-item__price">Гостиница <span>от 4000 р.</span></span>
-            <a href="#" class="results-more results-btn">Подробнее</a>
-            <a href="#" class="results-order results-btn">Забронировать</a>
+            <div class="result-text-wrap">
+                <h2>Amara Resort & Spa</h2>
+                <span class="results-item__price">Гостиница <span>от 4000 р.</span></span>
+            </div>
+            <div class="results-link-wrap">
+                <a href="#" class="results-more results-btn">Подробнее</a>
+                <a href="#" class="results-order results-btn">Забронировать</a>
+            </div>
           </div>
           <div class="results-rating">
             <div class="results-rating-stars">
               <span class="results-star">
-                <svg class="results-icon results-icon-star">
-                  <use xlink:href="#icon-star1"></use>
-                  <symbol id="icon-star1" viewBox="0 0 32 32">
-                    <path d="M16 23l-9 6 4-10-9-6h10l4-10 4 10h10l-9 6 4 10z"></path>
-                  </symbol>
-              </svg>
+                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
               </span>
               <span class="results-star">
-                <svg class="results-icon results-icon-star">
-                  <use xlink:href="#icon-star2"></use>
-                  <symbol id="icon-star2" viewBox="0 0 32 32">
-                    <path d="M16 23l-9 6 4-10-9-6h10l4-10 4 10h10l-9 6 4 10z"></path>
-                  </symbol>
-                </svg>
+                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
               </span>
               <span class="results-star">
-                <svg class="results-icon results-icon-star">
-                    <use xlink:href="#icon-star3"></use>
-                    <symbol id="icon-star3" viewBox="0 0 32 32">
-                      <path d="M16 23l-9 6 4-10-9-6h10l4-10 4 10h10l-9 6 4 10z"></path>
-                    </symbol>
-                </svg>
+                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
               </span>
               <span class="results-star">
-                <svg class="results-icon results-icon-star">
-                  <use xlink:href="#icon-star4"></use>
-                  <symbol id="icon-star4" viewBox="0 0 32 32">
-                    <path d="M16 23l-9 6 4-10-9-6h10l4-10 4 10h10l-9 6 4 10z"></path>
-                  </symbol>
-                </svg>
+                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
               </span>
             </div>
             <span class="results-rating__total">Рейтинг: <span>8,5</span></span>
@@ -143,28 +127,13 @@
           <div class="results-rating">
             <div class="results-rating-stars">
               <span class="results-star">
-                <svg class="results-icon results-icon-star"><use xlink:href="#icon-star5">
-                  
-                </use>
-              <symbol id="icon-star5" viewBox="0 0 32 32">
-                    <path d="M16 23l-9 6 4-10-9-6h10l4-10 4 10h10l-9 6 4 10z"></path>
-                  </symbol></svg>
+                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
               </span>
               <span class="results-star">
-                <svg class="results-icon results-icon-star"><use xlink:href="#icon-star6">
-                  
-                </use>
-              <symbol id="icon-star6" viewBox="0 0 32 32">
-                    <path d="M16 23l-9 6 4-10-9-6h10l4-10 4 10h10l-9 6 4 10z"></path>
-                  </symbol></svg>
+                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
               </span>
               <span class="results-star">
-                <svg class="results-icon results-icon-star"><use xlink:href="#icon-star7">
-                  
-                </use>
-              <symbol id="icon-star7" viewBox="0 0 32 32">
-                    <path d="M16 23l-9 6 4-10-9-6h10l4-10 4 10h10l-9 6 4 10z"></path>
-                  </symbol></svg>
+                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
               </span>
             </div>
             <span class="results-rating__total">Рейтинг: <span>8,9</span></span>
@@ -183,20 +152,10 @@
           <div class="results-rating">
             <div class="results-rating-stars">
               <span class="results-star">
-                <svg class="results-icon results-icon-star">
-                  <use xlink:href="#icon-star8"></use>
-                  <symbol id="icon-star8" viewBox="0 0 32 32">
-                    <path d="M16 23l-9 6 4-10-9-6h10l4-10 4 10h10l-9 6 4 10z"></path>
-                  </symbol>
-                </svg>
+                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
               </span>
               <span class="results-star">
-                <svg class="results-icon results-icon-star">
-                  <use xlink:href="#icon-star9"></use>
-                  <symbol id="icon-star9" viewBox="0 0 32 32">
-                    <path d="M16 23l-9 6 4-10-9-6h10l4-10 4 10h10l-9 6 4 10z"></path>
-                  </symbol>
-                </svg>
+                <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
               </span>
             </div>
             <span class="results-rating__total">Рейтинг: <span>9,2</span></span>
