@@ -20,7 +20,7 @@
             <a href="/catalog.html">Каталог</a>
             <ul class="nav-submenu">
               <li class="nav-submenu__item"><a href="#">Новинки</a></li>
-              <li class="nav-submenu__item"><a href="/catalog.html">Сливочное</a></li>
+              <li class="nav-submenu__item"><a href="catalog.html">Сливочное</a></li>
               <li class="nav-submenu__item"><a href="#">Щербеты</a></li>
               <li class="nav-submenu__item"><a href="#">Фруктовый лед</a></li>
               <li class="nav-submenu__item"><a href="#">Мелорин</a></li>
@@ -105,16 +105,22 @@
     <main>
       <div class="main-slider">
         <div class="main-slide">
-          <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-          <a href="#" class="btn main-slide__btn">Давайте оба</a>
+          <div class="main-slide-container">
+            <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+            <a href="#" class="btn main-slide__btn">Давайте оба</a>
+          </div>
         </div>
         <div class="main-slide">
-          <h2>Шоколадный пломбир и лимонный сорбет</h2>
-          <a href="#" class="btn main-slide__btn">Давайте оба</a>
+          <div class="main-slide-container">
+            <h2>Шоколадный пломбир и лимонный сорбет</h2>
+            <a href="#" class="btn main-slide__btn">Давайте оба</a>
+          </div>
         </div>
         <div class="main-slide">
-          <h2>Пломбир с помадкой и клубничный щербет</h2>
-          <a href="#" class="btn main-slide__btn">Давайте оба</a>
+          <div class="main-slide-container">
+            <h2>Пломбир с помадкой и клубничный щербет</h2>
+            <a href="#" class="btn main-slide__btn">Давайте оба</a>
+          </div>
         </div>
         <div class="slider-control">
           <label class="slider-controller" for="slide1"></label>
@@ -146,8 +152,8 @@
           <div class="icecream-img">
             <img src="img/ice1.png" alt="Сливочное с апельсиновым джемом" width="267" height="267">
             <div class="icecream-content">
-              <p class="icecream-price">310 <span>/кг</span></p>
-              <a href="" class="icecream-descr">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <p class="icecream-price">310 <span>Р</span>/кг</p>
+              <a href="#" class="icecream-descr">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               <a href="#" class="btn icecream-view">Быстрый просмотр</a>
             </div>
           </div>
@@ -156,7 +162,7 @@
           <div class="icecream-img">
             <img src="img/ice2.png" alt="Сливочно-кофейное" width="267" height="267">
             <div class="icecream-content">
-              <p class="icecream-price">380 <span>/кг</span></p>
+              <p class="icecream-price">380 <span>Р</span>/кг</p>
               <a href="" class="icecream-descr">Сливочно-кофейное с кусочками шоколада</a>
               <a href="#" class="btn icecream-view">Быстрый просмотр</a>
             </div>
@@ -166,7 +172,7 @@
           <div class="icecream-img">
             <img src="img/ice3.png" alt="Сливочно-клубничное" width="267" height="267">
             <div class="icecream-content">
-              <p class="icecream-price">355 <span>/кг</span></p>
+              <p class="icecream-price">355 <span>Р</span>/кг</p>
               <a href="" class="icecream-descr">Сливочно-клубничное с присыпкой из белого шоколада</a>
               <a href="#" class="btn icecream-view">Быстрый просмотр</a>
             </div>
@@ -176,7 +182,7 @@
           <div class="icecream-img">
             <img src="img/ice4.png" alt="Сливочное крем-брюле" width="267" height="267">
             <div class="icecream-content">
-              <p class="icecream-price">415 <span>/кг</span></p>
+              <p class="icecream-price">415 <span>Р</span>/кг</p>
               <a href="" class="icecream-descr">Сливочное крем-брюле с карамельной подливкой</a>
               <a href="#" class="btn icecream-view">Быстрый просмотр</a>
             </div>
@@ -184,15 +190,17 @@
         </div>
       </div>
       <div class="icecream-advantages">
-        <h2 class="icecream-advantage__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
-        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
-          оборудования и проверенных временем технологий.</p>
-        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми
-          нас связывает долговременное сотрудничество.</p>
-        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
-          дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
-        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
-          мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <div class="icecream-container">
+          <h2 class="icecream-advantage__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
+            оборудования и проверенных временем технологий.</p>
+          <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми
+            нас связывает долговременное сотрудничество.</p>
+          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
+            дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
+          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
+            мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        </div>
       </div>
       <div class="icecream-content">
         <div class="icecream-blog">

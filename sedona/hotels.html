@@ -14,7 +14,7 @@
       <ul class="menu">
         <li><a href="#" class="menu-link">Информация</a></li>
         <li><a href="#" class="menu-link">Фото и видео</a></li>
-        <li><a href="index.html"><img src="/" alt="Седона" width="138" height="70"></a></li>
+        <li><a href="index.html"><img src="img/logo.png" alt="Седона" width="138" height="70"></a></li>
         <li><a href="#" class="menu-link">Карта штата</a></li>
         <li><a href="#" class="menu-link menu-link__active">Гостиницы</a></li>
       </ul>
@@ -25,7 +25,7 @@
   <div class="container">
     <div class="main-filter">
       <form class="main-form" action="/" method="post">
-        <div class="filter-left">
+        <div class="filter-check">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <input type="checkbox" id="pool">
@@ -45,7 +45,7 @@
             <label for="apartments">Апартаменты</label>
           </fieldset>
         </div>
-        <div class="filter-right">
+        <div class="filter-range">
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
             <div class="filter-price">
@@ -98,18 +98,12 @@
           </div>
           <div class="results-rating">
             <div class="results-rating-stars">
-              <span class="results-star">
-                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
-              </span>
-              <span class="results-star">
-                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
-              </span>
-              <span class="results-star">
-                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
-              </span>
-              <span class="results-star">
-                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
-              </span>
+              <ul class="results-list">
+                <li class="results-list-star"></li>
+                <li class="results-list-star"></li>
+                <li class="results-list-star"></li>
+                <li class="results-list-star"></li>
+              </ul>
             </div>
             <span class="results-rating__total">Рейтинг: <span>8,5</span></span>
           </div>
@@ -126,15 +120,11 @@
           </div>
           <div class="results-rating">
             <div class="results-rating-stars">
-              <span class="results-star">
-                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
-              </span>
-              <span class="results-star">
-                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
-              </span>
-              <span class="results-star">
-                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
-              </span>
+               <ul class="results-list">
+                <li class="results-list-star"></li>
+                <li class="results-list-star"></li>
+                <li class="results-list-star"></li>
+              </ul>
             </div>
             <span class="results-rating__total">Рейтинг: <span>8,9</span></span>
           </div>
@@ -151,12 +141,10 @@
           </div>
           <div class="results-rating">
             <div class="results-rating-stars">
-              <span class="results-star">
-                  <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
-              </span>
-              <span class="results-star">
-                <img src="img/star.png" alt="Sedona Star" widh="18" height="17">
-              </span>
+              <ul class="results-list">
+                <li class="results-list-star"></li>
+                <li class="results-list-star"></li>
+              </ul>
             </div>
             <span class="results-rating__total">Рейтинг: <span>9,2</span></span>
           </div>

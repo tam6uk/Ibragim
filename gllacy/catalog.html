@@ -87,10 +87,10 @@
                 <td class="header-cart__price">1,5кг <span>x 300 руб.</span></td>
                 <td class="header-cart__count">450 руб.</td>
               </tr>
-              <tr class="header-cart__item">
-                <td class="header-cart__total">Итого: 750 руб.</td>
-              </tr>
             </table>
+            <div class="header-cart__item">
+                <td class="header-cart__total">Итого: 750 руб.</div>
+            </div>
             <div class="header-purchase">
               <button type="submit" class="btn header-purchase__btn">Оформить заказ</button>
             </div>
@@ -108,7 +108,7 @@
       <ul>
         <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
         <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
-        <li class="breadcrumbs-item"><span>Сливочное</span></li>
+        <li class="breadcrumbs-item"><a>Сливочное</a></li>
       </ul>
     </div>
     <h2>Сливочное мороженое</h2>
@@ -133,6 +133,8 @@
           </div>
         </div>
         <div class="input-wrap">
+            <!-- fieldset для того, чтобы ты мог не использовать div -->
+            <!-- Div для фона -->
           <fieldset>
             <legend>Жирность:</legend>
             <div class="input-bg">
@@ -151,15 +153,15 @@
           <fieldset>
             <legend>Наполнители:</legend>
             <div class="input-bg">
-              <input type="checkbox" class="main-filter__check" id="check0" name="filter-check">
+              <input type="checkbox" class="main-filter__check" id="check0" name="filter-check" value="chocolate">
               <label for="check0">шоколадные</label>
-              <input type="checkbox" class="main-filter__check" id="check1" name="filter-check">
+              <input type="checkbox" class="main-filter__check" id="check1" name="filter-check" value="sugar">
               <label for="check1">сахарные присыпки</label>
-              <input type="checkbox" class="main-filter__check" id="check2" name="filter-check">
+              <input type="checkbox" class="main-filter__check" id="check2" name="filter-check" value="fruits">
               <label for="check2">фрукты</label>
-              <input type="checkbox" class="main-filter__check" id="check3" name="filter-check">
+              <input type="checkbox" class="main-filter__check" id="check3" name="filter-check" value="syrup">
               <label for="check3">сиропы</label>
-              <input type="checkbox" class="main-filter__check" id="check4" name="filter-check">
+              <input type="checkbox" class="main-filter__check" id="check4" name="filter-check" value="jam">
               <label for="check4">джемы</label>
             </div>
           </fieldset>
@@ -291,7 +293,7 @@
     </div>
     <div class="pagination">
       <ul>
-        <li class="pagination-item"><a class="active-link pagination-link" href="/catalog.html">1</a></li>
+        <li class="pagination-item"><a class="active-link pagination-link">1</a></li>
         <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
         <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
         <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
