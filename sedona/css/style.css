@@ -35,6 +35,7 @@ body {
 
 p {
     margin: 0;
+    word-wrap: break-word;
 }
 
 ul {
@@ -221,6 +222,14 @@ h2 {
     background-color: #81b3d2;
 }
 
+.main-descr-photo {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
 .main-span-white,
 .main-paragraph-white {
     font-family: 'PTSans-Regular', sans-serif;
@@ -236,6 +245,10 @@ h2 {
 
 .main-content-row {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
 }
 
 .main-content-row img {
@@ -355,7 +368,7 @@ h2 {
 
 .main-form-wrap {
     max-width: 568px;
-    padding: 55px;
+    padding: 53px;
     margin: auto;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
     position: absolute;
@@ -453,7 +466,7 @@ h2 {
 }
 
 .main-children label {
-    min-width: 65px;
+    min-width: 55px;
 }
 
 .main-adults {
@@ -502,6 +515,15 @@ h2 {
     margin-top: 55px;
 }
 
+.main-submit:hover {
+    background-color: #669ec0;
+}
+
+.main-submit:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .main-map {
     height: 594px;
     background-image: url(../img/map.jpg);
@@ -510,17 +532,22 @@ h2 {
 }
 
 footer {
-    padding: 35px 100px 35px 130px;
+    padding: 37px 100px 38px 130px;
     background-color: rgba(255, 255, 255, .9);
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
 }
+footer.hotels-footer {
+    position: static;
+}
 
 .footer-visit {
-    width: 40%;
+    width: 41%;
     float: left;
+    max-width: 394px;
+    min-width: 140px;
 }
 
 .footer-socials {
@@ -541,11 +568,28 @@ footer {
     text-transform: uppercase;
 }
 
-.footer-link {
+.socials-item {
     display: inline-block;
+    margin-right: 4px;
+}
+
+.socials-item:last-child {
+    margin-right: 0;
+}
+
+.footer-link {
+    display: block;
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
+}
+
+.footer-link:hover {
+    background-color: #669ec0;
+}
+
+.footer-link:active {
+    background-color: #5496bd;
 }
 
 .text-hide {
@@ -558,16 +602,28 @@ footer {
     background-position: center center;
 }
 
+.twitter:active {
+    background-image: url(../img/twitter-active.png);
+}
+
 .facebook {
     background-image: url(../img/facebook.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
+.facebook:active {
+    background-image: url(../img/facebook-active.png);
+}
+
 .youtube {
     background-image: url(../img/youtube.png);
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.youtube:active {
+    background-image: url(../img/youtube-active.png);
 }
 
 .footer-copy__author {
@@ -585,6 +641,268 @@ footer {
 .footer-copy-logo {
     display: inline-block;
     vertical-align: middle;
+}
+
+.menu .menu-link-active, .menu .menu-link-active:hover, .menu .menu-link-active:active {
+    color: #766357;
+}
+
+.main-filter {
+    background-image: url(../img/top_bg.jpg);
+    padding: 28px 0 32px 0;
+}
+
+.inner-container {
+    max-width: 1086px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.main-results {
+    border-top: 1px solid #e8e8e8;
+}
+
+.results-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url(../img/bottom-line.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.filter-check fieldset, .filter-check, .filter-range, .filter-range fieldset {
+    float: left;
+    width: 50%;
+}
+
+.filter-check fieldset:first-of-type {
+    width: 49%;
+}
+
+.filter-check fieldset:nth-of-type(2) {
+    width: 51%;
+}
+
+.filter-range fieldset {
+    float: right;
+    width: 100%;
+    max-width: 318px;
+}
+
+.main-filter input[type="checkbox"] {
+    display: none;
+}
+
+.main-filter label {
+    display: block;
+    color: #ffffff;
+    font-family: "PTSans-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-left: 40px;
+    background-image: url(../img/checkbox-off.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+    cursor: pointer;
+}
+
+.main-filter label:first-of-type {
+    margin-bottom: 25px;
+}
+
+.main-filter label:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+.main-filter legend {
+    color: #ffffff;
+    font-family: "PTSans-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.filter-price {
+    padding: 5px 0;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    margin-bottom: 22px;
+}
+
+.filter-price input {
+    display: inline-block;
+    margin-right: -4px;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+    text-align: center;
+    padding: 0 10px;
+    color: #ffffff;
+    font-family: "PTSans-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.filter-min-price {
+    width: 51%;
+}
+
+.filter-max-price {
+    width: 50%;
+}
+
+.filter-price input::-webkit-input-placeholder {
+    color: #ffffff;
+    font-family: "PTSans-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.filter-price input::-moz-placeholder {
+    color: #ffffff;
+    font-family: "PTSans-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    }
+    /* Firefox 19+ */
+
+.filter-price input:-moz-placeholder {
+    color: #ffffff;
+    font-family: "PTSans-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    }
+    /* Firefox 18- */
+
+.filter-price input:-ms-input-placeholder {
+    color: #ffffff;
+    font-family: "PTSans-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    }
+
+
+
+.filter-price input:first-child {
+    border-right: 2px solid #fff;
+}
+
+.main-filter input[type="checkbox"]:checked  + label {
+    background-image: url(../img/checkbox-on.png);
+}
+
+.main-filter input[type="checkbox"][disabled] + label {
+    background-image: url(../img/checkbox-off-disable.png);
+    color: #6a6a6a;
+}
+
+.main-filter input[type="checkbox"][disabled]:checked + label {
+    background-image: url(../img/checkbox-on-disabled.png);
+}
+
+.range-wide {
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-selected {
+    width: 254px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    left: 11px;
+}
+
+.range-circle {
+    width: 20px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-circle:hover {
+    width: 22px;
+    height: 24px;
+}
+
+.range-min-btn {
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+.range-max-btn {
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+}
+
+.range-circle::before {
+    content: '';
+    background-color: #b5b5b5;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.filter-range legend {
+    margin-bottom: 10px;
+}
+
+.filter-range-line {
+    margin-bottom: 30px;
+}
+
+.filter-submit {
+    color: white;
+    font-family: "PTSans-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    background-color: transparent;
+    padding: 6px 34px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.filter-submit:hover {
+    color: #000000;
+    background-color: #ffffff;
 }
 
 @media screen and (min-width: 1200px) {
@@ -605,19 +923,20 @@ footer {
     }
 
     .main-descr {
-        padding: 50px 41px 60px 41px;
+        padding: 49px 41px 59px 41px;
+        max-width: 400px;
     }
 
     .main-advantage {
-        padding: 160px 47px 80px 47px;
+        padding: 160px 47px 82px 47px;
     }
 
     .main-descr-first {
-        padding-right: 60px;
-        padding-left: 60px;
+        padding-right: 59px;
+        padding-left: 59px;
     }
 
     .main-advantages__grey .main-advantage {
-        padding: 44px 70px 60px 70px;
+        padding: 50px 70px 60px 70px;
     }
 }

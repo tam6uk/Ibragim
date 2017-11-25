@@ -23,16 +23,29 @@
 
 /* Стили */
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
 body {
     color: #323232;
+    background: #849d8f;
     font-family: "Roboto-Regular", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 p {
@@ -55,7 +68,6 @@ h1 {
     font-weight: 700;
     line-height: 60px;
     font-family: "Roboto-Bold", sans-serif;
-    background-color: #abcce1; /* Временый фон */
 }
 h2 {
     color: #ffffff;
@@ -63,5 +75,214 @@ h2 {
     font-size: 35px;
     font-weight: 700;
     line-height: 41px;
-    background-color: #abcce1; /* Временый фон */
+}
+
+.container {
+    width: 100%;
+    padding: 0 27px;
+}
+
+header .container{
+    height: 120px;
+    border: 1px solid red;
+}
+
+.header-logo, nav {
+    float: left;
+}
+
+.header-logo {
+    height: 75px;
+}
+
+nav {
+    width: 350px;
+    border: 1px solid green;
+}
+
+.nav-menu__item {
+    float: left;
+}
+
+.nav-submenu {
+    display: none;
+}
+
+.header-info, .top-phone {
+    float: right;
+}
+
+.top-phone {
+    width: 170px;
+    border: 1px solid blue;
+    clear: right;
+}
+
+.header-info {
+    width: 265px;
+    border: 1px solid grey;
+}
+
+.header-info__search, .header-login, .header-cart {
+    display: none;
+}
+
+main .container {
+    border: 1px solid red;
+}
+
+main .container {
+    padding-bottom: 30px;
+}
+
+main::after {
+    content: '';
+    display: block;
+    height: 1px;
+    opacity: 0.3;
+    background-color: white;
+}
+
+.main-slider {
+    height: 530px;
+    width: 100%;
+    border: 1px solid yellow;
+}
+
+.main-banners {
+    height: 232px;
+    border: 1px solid green;
+}
+
+.main-banner {
+    height: 230px;
+    width: 560px;
+    border: 1px solid saddlebrown;
+    float: left;
+}
+
+.main-banner:nth-of-type(2) {
+    float: right;
+}
+
+.main-products {
+    border: 1px solid darkslateblue;
+}
+
+.icecream-item {
+    width: 267px;
+    border: 1px solid greenyellow;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.icecream-item:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.icecream-advantages {
+    height: 310px;
+    border: 1px solid mediumvioletred;
+}
+
+.icecream-advantages p {
+    width: calc(50% - 2px);
+    display: inline-block;
+    border: 1px solid red;
+}
+
+.icecream-content-item {
+    width: 560px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid blue;
+    height: 225px;
+}
+
+.icecream-blog {
+    margin-right: 18px;
+}
+
+.icecream-map .container {
+    position: relative;
+}
+
+.icecream-map img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.icecream-feedback {
+    width: 302px;
+    height: 305px;
+    position: absolute;
+    border: 1px solid red;
+    right: 27px;
+    top: 60px;
+}
+
+footer .container {
+    border: 1px solid green;
+}
+
+.footer-socials {
+    width: 190px;
+    float: left;
+    border: 1px solid salmon;
+    margin-right: 215px;
+}
+
+.footer-info {
+    width: 330px;
+    float: left;
+    border: 1px solid salmon;
+}
+
+.footer-copy {
+    float: right;
+    width: 190px;
+    border: 1px solid salmon;
+}
+
+.modal-feedback {
+    display: none;
+}
+
+.footer-info__link {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 2px);
+}
+
+/* Catalog */
+
+.breadcrumbs {
+    width: 225px;
+    float: left;
+    border: 1px solid green;
+}
+
+.breadcrumbs-item {
+    display: inline-block;
+}
+
+.main-filter {
+    border: 1px solid red;
+    width: 860px;
+    margin-bottom: 40px;
+}
+
+.pagination {
+    margin-top: 80px;
+    border: 1px solid blue;
+}
+
+.pagination-item {
+    display: inline-block;
+}
+
+.pagination ul {
+    width: 190px;
+    float: right;
 }
