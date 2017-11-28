@@ -46,10 +46,11 @@ body {
     background-color 0.3s ease;
 }
 
-.inner-wrapper {
+.inner-container {
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    position: relative;
 }
 
 .clearfix::after {
@@ -107,17 +108,17 @@ fieldset {
     border: 0;
 }
 
-.container {
+header, main, footer {
     width: 100%;
     padding: 0 27px;
 }
 
-img {
-    display: inline-block;
-}
-
 header {
     padding-top: 9px;
+}
+
+img {
+    display: inline-block;
 }
 
 .header-logo, nav {
@@ -556,7 +557,7 @@ input#slide3:checked ~ .outer-wrapper {
 }
 
 .icecream-advantages p {
-    width: calc(50% - 2px);
+    width: calc(50% - 13px);
     display: inline-block;
 }
 

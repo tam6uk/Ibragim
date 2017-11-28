@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container">
-    <header>
+<header>
+    <div class="container">
         <nav>
             <ul class="menu clearfix">
                 <li><a href="#" class="menu-link">Информация</a></li>
@@ -20,8 +20,10 @@
                 <li><a href="hotels.html" class="menu-link">Гостиницы</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
+    </div>
+</header>
+<main>
+    <div class="container">
         <div class="main-intro">
             <div class="main-headers">
                 <div class="main-headers-welcome">
@@ -41,16 +43,12 @@
             </div>
         </div>
         <div class="main-content clearfix">
-            <div class="main-content-row">
-                <div class="main-descr main-descr-first">
-                    <b class="main-white">Настоящий городок</b>
-                    <span class="main-span-white">— №1 —</span>
-                    <p class="main-paragraph-white">Седона — не аттракцион для туристов, там течет своя жизнь</p>
-                </div>
-                <div class="main-descr-photo main-descr-city">
-                    <img src="img/gorodok.jpg" alt="Настоящий городок" width="800" height="256">
-                </div>
+            <div class="main-descr main-descr-first">
+                <b class="main-white">Настоящий городок</b>
+                <span class="main-span-white">— №1 —</span>
+                <p class="main-paragraph-white">Седона — не аттракцион для туристов, там течет своя жизнь</p>
             </div>
+            <img src="img/gorodok.jpg" alt="Настоящий городок" width="800">
         </div>
         <div class="main-advantages clearfix">
             <div class="main-advantage main-advantage__housing">
@@ -69,15 +67,11 @@
             </div>
         </div>
         <div class="main-content clearfix">
-            <div class="main-content-row">
-                <div class="main-descr-photo main-descr-devil">
-                    <img src="img/canyon.jpg" alt="Мост дьявола" width="800" height="256">
-                </div>
-                <div class="main-descr">
-                    <b class="main-white">там есть <br>мост дьявола</b>
-                    <span class="main-span-white">— №2 —</span>
-                    <p class="main-paragraph-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                </div>
+            <img src="img/canyon.jpg" alt="Мост дьявола" width="800">
+            <div class="main-descr">
+                <b class="main-white">там есть <br>мост дьявола</b>
+                <span class="main-span-white">— №2 —</span>
+                <p class="main-paragraph-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
         </div>
         <div class="main-advantages main-advantages__grey clearfix">
@@ -137,9 +131,11 @@
         </div>
         <div class="main-map" id="main-map">
         </div>
-        <!-- iframe можешь уже добавлять, в принципе -->
-    </main>
-    <footer class="clearfix">
+    </div>
+    <!-- iframe можешь уже добавлять, в принципе -->
+</main>
+<footer>
+    <div class="container clearfix">
         <div class="footer-visit">
             <a href="#" class="footer-visit__btn">#visitsedona</a>
         </div>
@@ -157,17 +153,17 @@
             </ul>
         </div>
         <div class="footer-copy">
-      <span class="footer-copy__author">
-        website by
-      </span>
+                <span class="footer-copy__author">
+                    website by
+                </span>
             <div class="footer-copy-logo">
                 <a href="https://up.htmlacademy.ru/htmlcss/16">
                     <img src="img/footer_logo.png" alt="HTML Academy" width="115" height="41">
                 </a>
             </div>
         </div>
-    </footer>
-</div>
+    </div>
+</footer>
 <script src="js/script.js"></script>
 </body>
 </html>
