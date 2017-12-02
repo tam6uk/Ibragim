@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
     <header>
         <div class="container">
             <nav>
-                <ul class="menu">
+                <ul class="menu flex">
                     <li>
                         <a href="#" class="menu-link">Информация</a>
                     </li>
@@ -54,7 +54,7 @@
                     <span>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
                 </div>
             </div>
-            <div class="main-content ">
+            <div class="main-content flex">
                 <div class="main-descr main-descr-first">
                     <b class="main-white">Настоящий городок</b>
                     <span class="main-span-white">— №1 —</span>
@@ -62,7 +62,7 @@
                 </div>
                 <img src="img/gorodok.jpg" alt="Настоящий городок" width="800">
             </div>
-            <div class="main-advantages">
+            <div class="main-advantages flex">
                 <div class="main-advantage main-advantage__housing">
                     <b class="main-black">жилье</b>
                     <p class="main-paragraph-black">
@@ -77,7 +77,7 @@
                     <p class="main-paragraph-black">Не только китайского, но и местного производства!</p>
                 </div>
             </div>
-            <div class="main-content">
+            <div class="main-content flex">
                 <img src="img/canyon.jpg" alt="Мост дьявола" width="800">
                 <div class="main-descr">
                     <b class="main-white">там есть
@@ -86,7 +86,7 @@
                     <p class="main-paragraph-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
             </div>
-            <div class="main-advantages main-advantages__grey">
+            <div class="main-advantages flex main-advantages__grey">
                 <div class="main-advantage">
                     <b class="main-black">небольшая площадь</b>
                     <span class="main-span-black">— №3 —</span>
@@ -112,14 +112,16 @@
                     <button type="button" class="main-form__btn btn-toggle">Поиск гостиницы в седоне</button>
                 </div>
                 <div class="main-form-wrap popup-hide">
-                    <form action="/" class="main-form" method="post">
+                    <form action="/" class="main-form flex" method="post">
                         <div class="main-form-divider">
                             <label for="arrival-date">дата заезда:</label>
-                            <input class="main-input" name="arrival" type="text" id="arrival-date" value="24 апреля 2017">
+                            <input class="main-input main-input-text" name="arrival" type="text" id="arrival-date" value="24 апреля 2017">
+                            <button class="main-input-calendar"></button>
                         </div>
                         <div class="main-form-divider">
                             <label for="departure-date">дата заезда:</label>
-                            <input class="main-input" name="departure" type="text" id="departure-date" value="4 июля 2017">
+                            <input class="main-input main-input-text" name="departure" type="text" id="departure-date" value="4 июля 2017">
+                            <button class="main-input-calendar"></button>
                         </div>
                         <div class="main-adults">
                             <label for="adults-count">взрослые:</label>
@@ -142,7 +144,7 @@
         </div>
     </main>
     <footer>
-        <div class="container">
+        <div class="container flex">
             <div class="footer-visit">
                 <a href="#" class="footer-visit__btn">#visitsedona</a>
             </div>
@@ -171,14 +173,13 @@
                 </span>
                 <div class="footer-copy-logo">
                     <a href="https://up.htmlacademy.ru/htmlcss/16">
-                        <img src="img/footer_logo.png" alt="HTML Academy" width="115" height="41">
                     </a>
                 </div>
             </div>
         </div>
     </footer>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoMtQrRFOlsROegenc7hPhKHv1CcuJZL0&callback=initMap">
+    src="js/google-map.js">
     </script>
     <script src="js/script.js"></script>
 </body>

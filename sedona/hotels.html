@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона - Гостиницы</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
     <header>
         <div class="container">
             <nav>
-                <ul class="menu">
+                <ul class="menu flex">
                     <li>
                         <a href="#" class="menu-link">Информация</a>
                     </li>
@@ -39,8 +39,8 @@
         <div class="container">
             <div class="main-filter">
                 <div class="inner-container">
-                    <form class="main-form" action="/" method="post">
-                        <div class="filter-check">
+                    <form class="main-form flex" action="/" method="post">
+                        <div class="filter-check flex">
                             <fieldset>
                                 <legend>Инфраструктура:</legend>
                                 <input type="checkbox" id="pool">
@@ -83,7 +83,7 @@
             </div>
             <div class="main-results">
                 <div class="results-header">
-                    <div class="inner-container">
+                    <div class="inner-container flex">
                         <b class="results-found">Найдено:
                             <span>3</span>
                         </b>
@@ -103,13 +103,13 @@
                 </div>
                 <div class="results-content">
                     <div class="results-item">
-                        <div class="inner-container">
+                        <div class="inner-container flex">
                             <div class="results-item-img">
                                 <img src="img/amara.jpg" alt="Amara Resort and Spa" width="135" height="90">
                             </div>
-                            <div class="results-item-info">
+                            <div class="results-item-info flex">
                                 <div class="result-text-wrap">
-                                    <h2>Amara Resort & Spa</h2>
+                                    <h2 class="result-header"><a href="#">Amara Resort & Spa</a></h2>
                                     <span class="results-item__price">Гостиница
                                     </span>
                                     <span>от 4000 р.</span>
@@ -119,7 +119,7 @@
                                     <a href="#" class="results-order results-btn">Забронировать</a>
                                 </div>
                             </div>
-                            <div class="results-rating">
+                            <div class="results-rating flex">
                                 <div class="results-rating-stars">
                                     <ul class="results-list">
                                         <li class="results-list-star"></li>
@@ -135,13 +135,13 @@
                         </div>
                     </div>
                     <div class="results-item">
-                        <div class="inner-container">
+                        <div class="inner-container flex">
                             <div class="results-item-img">
                                 <img src="img/quail.jpg" alt="Desert Quail Inn" width="135" height="90">
                             </div>
-                            <div class="results-item-info">
+                            <div class="results-item-info flex">
                                 <div class="result-text-wrap">
-                                    <h2>Desert Quail Inn</h2>
+                                    <h2 class="result-header"><a href="#">Desert Quail Inn</a></h2>
                                     <span class="results-item__price">Мотель
                                     </span>
                                     <span>от 3000 р.</span>
@@ -166,13 +166,13 @@
                         </div>
                     </div>
                     <div class="results-item">
-                        <div class="inner-container">
+                        <div class="inner-container flex">
                             <div class="results-item-img">
                                 <img src="img/diablo.jpg" alt="Villas at Poco Diablo" width="135" height="90">
                             </div>
-                            <div class="results-item-info">
+                            <div class="results-item-info flex">
                                 <div class="result-text-wrap">
-                                    <h2>Villas at Poco Diablo</h2>
+                                    <h2 class="result-header"><a href="#">Villas at Poco Diablo</a></h2>
                                     <span class="results-item__price">Апартаменты
                                     </span>
                                     <span>от 2000 р.</span>
@@ -200,7 +200,7 @@
         </div>
     </main>
     <footer class="hotels-footer">
-        <div class="container">
+        <div class="container flex">
             <div class="footer-visit">
                 <a href="#" class="footer-visit__btn">#visitsedona</a>
             </div>
@@ -229,7 +229,6 @@
                 </span>
                 <div class="footer-copy-logo">
                     <a href="https://up.htmlacademy.ru/htmlcss/16">
-                        <img src="img/footer_logo.png" alt="HTML Academy" width="115" height="41">
                     </a>
                 </div>
             </div>

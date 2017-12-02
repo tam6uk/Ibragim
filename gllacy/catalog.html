@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог мороженых</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
     <div class="outer-wrapper catalog-outer-wrapper">
         <header class="inner-container">
             <div class="container">
-                <div class="header-top">
+                <div class="header-top flex">
                     <div class="header-logo">
                         <a href="index.html">
                             <img src="img/logo.png" alt="Gllacy Shop" width="154" height="64">
                         </a>
                     </div>
                     <nav>
-                        <ul class="nav-menu">
+                        <ul class="nav-menu flex">
                             <li class="nav-menu__item nav_menu__active nav-menu__catalog">
                                 <a>Каталог</a>
                                 <div class="nav-submenu-wrap">
@@ -62,7 +62,7 @@
                             <li class="header-info__item">
                                 <a class="header-info__btn login-btn" href="#">Вход</a>
                                 <div class="header-login">
-                                    <form action="/" class="header-login__form">
+                                    <form action="/" class="header-login__form flex">
                                         <input class="header-login__input" type="text" id="login-email" placeholder="Электронная почта" required>
                                         <input class="header-login__input" type="password" id="login-pass" placeholder="Пароль" required>
                                         <button class="header-login__btn btn">Войти</button>
@@ -79,7 +79,7 @@
                                     <table class="header-cart__table">
                                         <tr class="header-cart__item">
                                             <td class="header-cart__remove">
-                                                    <a class="header-cart__icon-remove">Закрыть</a>
+                                                <a class="header-cart__icon-remove">Закрыть</a>
                                             </td>
                                             <td class="header-cart__img">
                                                 <img src="img/mini_ice1.png" alt="Пломбир с апельсиновым джемом" width="33" height="33">
@@ -92,7 +92,7 @@
                                         </tr>
                                         <tr class="header-cart__item">
                                             <td class="header-cart__remove">
-                                                    <a class="header-cart__icon-remove">Закрыть</a>
+                                                <a class="header-cart__icon-remove">Закрыть</a>
                                             </td>
                                             <td class="header-cart__img">
                                                 <img src="img/mini_ice2.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
@@ -116,9 +116,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="header-bottom">
+                <div class="header-bottom flex">
                     <div class="breadcrumbs">
-                        <ul>
+                        <ul class="flex">
                             <li class="breadcrumbs-item">
                                 <a href="index.html">Главная</a>
                             </li>
@@ -139,23 +139,24 @@
         </header>
         <main class="inner-container">
             <div class="container">
-                <h2>Сливочное мороженое</h2>
+                <h3>Сливочное мороженое</h3>
                 <div class="main-filter">
-                    <form action="/" method="post">
+                    <form action="/" method="post" class="flex">
                         <div class="input-wrap">
-                            <label for="main-sort">Сортировка:</label>
-                            <div class="input-bg">
+                            <label for="main-sort" class="main-sort-label">Сортировка:</label>
+                            <div class="input-bg flex">
                                 <select name="main-sort" id="main-sort">
                                     <option value="По популярности">По популярности</option>
                                 </select>
                             </div>
                         </div>
                         <div class="input-wrap">
-                            <div class="input-bg">
+                            <div class="range-label">Цена: 100 руб. - 500 р.</div>
+                            <div class="input-bg flex range-bg">
                                 <div class="range-move">
                                     <div class="range-selected">
-                                        <div class="range-min"></div>
-                                        <div class="range-max"></div>
+                                        <div class="range-btn range-min"></div>
+                                        <div class="range-btn range-max"></div>
                                     </div>
                                 </div>
                             </div>
@@ -163,22 +164,22 @@
                         <div class="input-wrap">
                             <fieldset>
                                 <legend>Жирность:</legend>
-                                <div class="input-bg">
+                                <div class="input-bg flex first-input-wrap">
+                                    <input type="radio" class="main-filter__radio" id="radio0" value="0" name="filter-radio" checked>
                                     <label for="radio0">0%</label>
-                                    <input type="radio" class="main-filter__radio" id="radio0" value="0" name="filter-radio">
-                                    <label for="radio1">до 10%</label>
                                     <input type="radio" class="main-filter__radio" id="radio1" value="10" name="filter-radio">
-                                    <label for="radio2">до 30%</label>
+                                    <label for="radio1">до 10%</label>
                                     <input type="radio" class="main-filter__radio" id="radio2" value="less30" name="filter-radio">
-                                    <label for="radio3">выше 30%</label>
+                                    <label for="radio2">до 30%</label>
                                     <input type="radio" class="main-filter__radio" id="radio3" value="more30" name="filter-radio">
+                                    <label for="radio3">выше 30%</label>
                                 </div>
                             </fieldset>
                         </div>
-                        <div class="input-wrap">
+                        <div class="input-wrap last-input-wrap flex">
                             <fieldset>
                                 <legend>Наполнители:</legend>
-                                <div class="input-bg">
+                                <div class="input-bg flex">
                                     <input type="checkbox" class="main-filter__check" id="check0" name="filter-check" value="chocolate">
                                     <label for="check0">шоколадные</label>
                                     <input type="checkbox" class="main-filter__check" id="check1" name="filter-check" value="sugar">
@@ -191,18 +192,19 @@
                                     <label for="check4">джемы</label>
                                 </div>
                             </fieldset>
-                            <button class="btn main-filter__btn">Применить</button>
+                            <button class="main-filter__btn">Применить</button>
                         </div>
                     </form>
                 </div>
-                <div class="main-products">
+                <div class="main-products flex">
 
                     <div class="icecream-item">
                         <div class="icecream-img">
                             <img src="img/ice1.png" alt="Сливочное с апельсиновым джемом" width="267" height="267">
                         </div>
                         <div class="icecream-content">
-                            <p class="icecream-price">310 <span class="rouble">p</span>
+                            <p class="icecream-price">310
+                                <span class="rouble">p</span>
                                 <span>/кг</span>
                             </p>
                             <a href="#" class="icecream-descr">Сливочное с апельсиновым джемом и цитрусовой стружкой
@@ -217,7 +219,8 @@
                             <img src="img/ice2.png" alt="Сливочно-кофейное" width="267" height="267">
                         </div>
                         <div class="icecream-content">
-                            <p class="icecream-price">380 <span class="rouble">p</span>
+                            <p class="icecream-price">380
+                                <span class="rouble">p</span>
                                 <span>/кг</span>
                             </p>
                             <a href="#" class="icecream-descr">Сливочно-кофейное с кусочками шоколада</a>
@@ -231,7 +234,8 @@
                             <img src="img/ice3.png" alt="Сливочно-клубничное" width="267" height="267">
                         </div>
                         <div class="icecream-content">
-                            <p class="icecream-price">355 <span class="rouble">p</span>
+                            <p class="icecream-price">355
+                                <span class="rouble">p</span>
                                 <span>/кг</span>
                             </p>
                             <a href="#" class="icecream-descr">Сливочно-клубничное с присыпкой из белого шоколада
@@ -246,7 +250,8 @@
                             <img src="img/ice4.png" alt="Сливочное крем-брюле" width="267" height="267">
                         </div>
                         <div class="icecream-content">
-                            <p class="icecream-price">415 <span class="rouble">p</span>
+                            <p class="icecream-price">415
+                                <span class="rouble">p</span>
                                 <span>/кг</span>
                             </p>
                             <a href="#" class="icecream-descr">Сливочное крем-брюле с карамельной подливкой</a>
@@ -261,7 +266,8 @@
                             <img src="img/ice5.png" alt="Сливочное с брусничным джемом" width="267" height="267">
                         </div>
                         <div class="icecream-content">
-                            <p class="icecream-price">325 <span class="rouble">p</span>
+                            <p class="icecream-price">325
+                                <span class="rouble">p</span>
                                 <span>/кг</span>
                             </p>
                             <a href="#" class="icecream-descr">Сливочное с брусничным джемом</a>
@@ -275,7 +281,8 @@
                             <img src="img/ice6.png" alt="Сливочно-черничное с цельными ягодами черники" width="267" height="267">
                         </div>
                         <div class="icecream-content">
-                            <p class="icecream-price">410 <span class="rouble">p</span>
+                            <p class="icecream-price">410
+                                <span class="rouble">p</span>
                                 <span>/кг</span>
                             </p>
                             <a href="#" class="icecream-descr">Сливочно-черничное с цельными ягодами черники</a>
@@ -289,7 +296,8 @@
                             <img src="img/ice7.png" alt="Сливочно-лимонное с карамельной присыпкой" width="267" height="267">
                         </div>
                         <div class="icecream-content">
-                            <p class="icecream-price">375 <span class="rouble">p</span>
+                            <p class="icecream-price">375
+                                <span class="rouble">p</span>
                                 <span>/кг</span>
                             </p>
                             <a href="#" class="icecream-descr">Сливочно-лимонное с карамельной присыпкой</a>
@@ -303,7 +311,8 @@
                             <img src="img/ice8.png" alt="Сливочное с шоколадной стружкой" width="267" height="267">
                         </div>
                         <div class="icecream-content">
-                            <p class="icecream-price">320 <span class="rouble">p</span>
+                            <p class="icecream-price">320
+                                <span class="rouble">p</span>
                                 <span>/кг</span>
                             </p>
                             <a href="#" class="icecream-descr">Сливочное с шоколадной стружкой</a>
@@ -318,7 +327,8 @@
                             <img src="img/ice9.png" alt="Сливочно-ванильное с кусочками шоколада " width="267" height="267">
                         </div>
                         <div class="icecream-content">
-                            <p class="icecream-price">440 <span class="rouble">p</span>
+                            <p class="icecream-price">440
+                                <span class="rouble">p</span>
                                 <span>/кг</span>
                             </p>
                             <a href="#" class="icecream-descr">Сливочно-ванильное с кусочками шоколада </a>
@@ -332,7 +342,8 @@
                             <img src="img/ice10.png" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
                         </div>
                         <div class="icecream-content">
-                            <p class="icecream-price">435 <span class="rouble">p</span>
+                            <p class="icecream-price">435
+                                <span class="rouble">p</span>
                                 <span>/кг</span>
                             </p>
                             <a href="#" class="icecream-descr">Сливочноe с ментоловым сиропом</a>
@@ -346,7 +357,8 @@
                             <img src="img/ice11.png" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
                         </div>
                         <div class="icecream-content">
-                            <p class="icecream-price">355 <span class="rouble">p</span>
+                            <p class="icecream-price">355
+                                <span class="rouble">p</span>
                                 <span>/кг</span>
                             </p>
                             <a href="#" class="icecream-descr">Сливочное с кусочками черного шоколада</a>
@@ -360,7 +372,8 @@
                             <img src="img/ice12.png" alt="Сливочное с мятным сиропом" width="267" height="267">
                         </div>
                         <div class="icecream-content">
-                            <p class="icecream-price">420 <span class="rouble">p</span>
+                            <p class="icecream-price">420
+                                <span class="rouble">p</span>
                                 <span>/кг</span>
                             </p>
                             <a href="#" class="icecream-descr">Сливочное с мятным сиропом</a>
@@ -386,24 +399,24 @@
                 </div>
             </div>
         </main>
-        <footer class="inner-container">
+        <footer class="inner-container flex">
             <div class="footer-socials">
                 <ul>
                     <li class="footer-socials__item">
-                        <a href="#">Twitter</a>
+                        <a href="#" class="twitter">Twitter</a>
                     </li>
                     <li class="footer-socials__item">
-                        <a href="#">Instagram</a>
+                        <a href="#" class="instagram">Instagram</a>
                     </li>
                     <li class="footer-socials__item">
-                        <a href="#">Facebook</a>
+                        <a href="#" class="facebook">Facebook</a>
                     </li>
                     <li class="footer-socials__item">
-                        <a href="#">Вконтакте</a>
+                        <a href="#" class="vk">Вконтакте</a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-info">
+            <div class="footer-info flex">
                 <a href="#" class="footer-info__link">Для поставщиков</a>
                 <a href="#" class="footer-info__link">О производстве</a>
                 <a href="#" class="footer-info__link">Наши документы</a>
