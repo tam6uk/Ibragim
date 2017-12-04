@@ -359,7 +359,7 @@ footer .container {
 }
 
 .main-form-wrap {
-    max-width: 568px;
+    width: 568px;
     padding: 55px;
     margin: auto;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
@@ -1162,6 +1162,14 @@ fieldset {
 
 .results-list-star:last-of-type {
     margin-right: 0;
+}
+
+.main-content img {
+    width: 66%;
+}
+
+.result-sort-active {
+    border-top-color: #81b3d2;
 }
 
 @media screen and (min-width: 1200px) {

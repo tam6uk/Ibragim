@@ -56,15 +56,24 @@
                             <li class="header-info__item">
                                 <a class="header-info__btn search_btn" href="#">Search</a>
                                 <div class="header-info__search">
-                                    <input class="header-info__input" id="search" type="search" name="search" placeholder="Что ищем?" required>
+                                    <div class="modal-feedback__field">
+                                        <input class="header-info__input main__input" id="search" type="search" name="search" required>
+                                        <label class="input_label" for="search">Что ищем?</label>
+                                    </div>
                                 </div>
                             </li>
                             <li class="header-info__item">
                                 <a class="header-info__btn login-btn" href="#">Вход</a>
                                 <div class="header-login">
                                     <form action="/" class="header-login__form flex">
-                                        <input class="header-login__input" type="text" id="login-email" placeholder="Электронная почта" required>
-                                        <input class="header-login__input" type="password" id="login-pass" placeholder="Пароль" required>
+                                        <div class="modal-feedback__field login__field">
+                                            <input class="header-login__input main__input" type="text" id="login-email" required>
+                                            <label class="input_label" for="login-email">Электронная почта</label>
+                                        </div>
+                                        <div class="modal-feedback__field login__field">
+                                            <input class="header-login__input main__input" type="password" id="login-pass" required>
+                                            <label class="input_label" for="login-pass">Пароль</label>
+                                        </div>
                                         <button class="header-login__btn btn">Войти</button>
                                         <div class="header-login__links">
                                             <a href="#" class="header-login__auth">Забыли пароль?</a>
@@ -384,16 +393,27 @@
                     </div>
                 </div>
                 <div class="pagination">
-                    <ul>
-                        <li class="pagination-item">
-                            <a class="pagination-link">"
-                                < "</a></li>
-                    <li class="pagination-item "><a class="active-link pagination-link ">1</a></li>
-                    <li class="pagination-item "><a class="pagination-link " href="# ">2</a></li>
-                    <li class="pagination-item "><a class="pagination-link " href="# ">3</a></li>
-                    <li class="pagination-item "><a class="pagination-link " href="# ">4</a></li>
-                    <li class="pagination-item "><a class="pagination-link " href="# ">5</a></li>
-                    <li class="pagination-item "><a class="pagination-link " href="# ">">"</a>
+                    <ul class="flex pagination-list">
+                        <li class="pagination-item pagination-prev">
+                            <a class="pagination-link" href="#"></a>
+                        </li>
+                        <li class="pagination-item ">
+                            <a class="active-link pagination-link">1</a>
+                        </li>
+                        <li class="pagination-item ">
+                            <a class="pagination-link" href="#">2</a>
+                        </li>
+                        <li class="pagination-item ">
+                            <a class="pagination-link" href="#">3</a>
+                        </li>
+                        <li class="pagination-item ">
+                            <a class="pagination-link" href="#">4</a>
+                        </li>
+                        <li class="pagination-item ">
+                            <a class="pagination-link" href="#">5</a>
+                        </li>
+                        <li class="pagination-item pagination-next">
+                            <a class="pagination-link" href="#"></a>
                         </li>
                     </ul>
                 </div>

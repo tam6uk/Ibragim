@@ -24,3 +24,16 @@ ymaps.ready(function () {
         .add(myPlacemark);
     myMap.behaviors.disable('scrollZoom'); 
 });
+
+var feedback_btn = document.querySelector('#feedback'),
+    feedback_modal = document.querySelector('.modal-feedback'),
+    feeedback_overlay = document.querySelector('.overlay'),
+    feedback_close = document.querySelector('.modal-close');
+    feedback_btn.addEventListener('click', function () {
+        feedback_modal.classList.add('modal-show');
+        feeedback_overlay.classList.add('modal-show');
+    });
+    feedback_close.addEventListener('click', function () {
+        feedback_modal.classList.remove('modal-show');
+        feeedback_overlay.classList.remove('modal-show');
+    });
