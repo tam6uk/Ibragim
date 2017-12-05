@@ -738,7 +738,6 @@ input#slide3:checked~.outer-wrapper {
     max-width: 293px;
     padding: 5px 9px 24px 9px;
     text-align: center;
-    flex-grow: 1;
 }
 
 .icecream-item::after {
@@ -850,11 +849,7 @@ input#slide3:checked~.outer-wrapper {
     border-radius: 15px;
     padding: 25px 20px;
     background-color: #fff;
-}
-
-.icecream-content-item {
-    flex-basis: 50%;
-    max-width: 560px;
+    flex-basis: calc(50% - 13px);
     display: inline-block;
     vertical-align: top;
 }
@@ -1215,12 +1210,10 @@ footer {
 .pagination-list {
     justify-content: flex-end;
     position: relative;
-    padding-right: 20px;
 }
 
 .pagination-item {
-    display: inline-block;
-    margin-right: 4px;
+    margin-right: 6px;
 }
 
 .pagination-link {
@@ -1248,9 +1241,8 @@ footer {
     color: #000;
 }
 
-.pagination-prev,
-.pagination-next {
-    position: absolute;
+.pagination-prev, .pagination-next {
+    align-items: center;
 }
 
 .pagination-prev a,
@@ -1272,18 +1264,6 @@ footer {
 .pagination-prev a {
     border-top-color: transparent;
     border-right-color: transparent;
-}
-
-.pagination-prev {
-    right: 175px;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-.pagination-next {
-    right: 0;
-    top: 50%;
-    transform: translate(0, -50%);
 }
 
 .pagination-next a {
@@ -1388,7 +1368,7 @@ address a {
 }
 
 .main-filter {
-    max-width: 865px;
+    max-width: 860px;
     padding-top: 15px;
 }
 
